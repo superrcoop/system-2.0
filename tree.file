@@ -1,0 +1,20 @@
+electron-project/
+  |--node_modules/
+  |--static/
+  |  |--css/
+  |  |  |--materialize.css
+  |  |  |--materialize.min.css
+  |  |--fonts/
+  |  |  |--roboto/
+  |  |--js/
+  |  |  |--imports.js
+  |  |  |--jquery-3.2.1.min.js
+  |  |  |--main.js
+  |  |  |--materialize.js
+  |  |  |--materialize.min.js
+  |  |--sections/
+  |  |  |--home.html
+  |  |  |--login.html
+  |--index.html
+  |--package.json
+  |--package-lock.json

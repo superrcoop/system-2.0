@@ -1,0 +1,390 @@
+html {
+	font-family: Arial;
+	-webkit-user-select: none; 
+	-webkit-user-drag: none; 
+	cursor: default; 
+}
+
+body {
+	margin: 0; 
+	background-color: aliceblue;
+	overflow: -moz-scrollbars-vertical;
+	overflow: hidden;
+}
+html {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+::-webkit-scrollbar {
+	width: 0px;  /* remove scrollbar space */
+	background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+	background: #FF0000;
+}
+
+.is-selectable, pre, code {
+	-webkit-user-select: auto;
+	cursor: auto;
+}
+
+
+button{
+	cursor: default;
+}
+textarea, input, button {
+	outline: none;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+/*	border-bottom: 1px dashed;*/
+	outline: none;
+}
+
+a[target],
+a[href^="https://"],
+a[href^="http://"] {
+	border-bottom: 1px solid;
+}
+
+.brand-logo{
+	border-bottom: none;
+}
+
+a:hover,
+a:focus {
+	border-bottom: none;
+}
+
+img {
+	-webkit-user-drag: none; 
+}
+
+.container-main{
+	margin-top: 50px;
+}
+
+.content {
+	display: none;
+	opacity: 0;
+}
+
+.is-shown {
+	display: block;
+	opacity: 1;
+}
+/*
+.content {
+	flex: 1;
+	position: relative;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+}
+.content.is-shown {
+	visibility: visible;;
+	opacity: 1;
+}
+*/
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+.nav-ctrl, .header-title, .hamburger-menu {
+	cursor: pointer;
+	position: absolute;
+	color: white;
+}
+
+.nav-ctrl {
+	background: url(../assets/lab-logo.png);
+	background-size: 70px 70px;
+	width: 70px;
+	height: 70px;
+	background-repeat: no-repeat;
+	margin-right: 13rem;
+	margin-top: 25px;
+	left: calc(50% - 90px);
+}
+
+.header-title {
+	font-size: 3em;
+	margin-right: 10rem;
+	margin-top: 40px;
+	left: calc(50% - 10px);
+}
+
+.hamburger-menu {
+	margin-right: 10rem;
+	margin-top: 40px;
+	left: calc(3% - 10px);
+}
+
+header {
+	height: 150px;
+	background-color: #2ba5b7;
+}
+
+.nav-ctrl {
+	background: url(../assets/lab-logo.png);
+	background-size: 70px 70px;
+	width: 70px;
+	height: 70px;
+	background-repeat: no-repeat;
+	margin-right: 13rem;
+	cursor: pointer;
+	margin-top: 25px;
+	position: absolute;
+	left: calc(50% - 90px);
+}
+
+.sidenav {
+	height: 100%; 
+	width: 0;
+	position: fixed; 
+	z-index: 1; 
+	top: 0;
+	left: 0;
+	background-color: #f3f9fa; 
+	overflow-x: hidden; 
+	padding-top: 60px; 
+	transition: 0.5s; 
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+	color: #2ba5b7;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
+.content-a {
+	min-height: calc(100% - 150px);
+	width: 100%;
+}
+
+.content .header {
+	width: 100%;
+	padding: 22px 50px;
+	margin: auto;
+	text-align: center;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header-actions {
+	display: flex;
+	justify-content: center;
+}
+
+.form-container {
+	color: #1ab2d5;
+	margin: auto;
+	width: 55.7%;
+	min-width: 300px;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+	border-radius: 8px;
+	background-color: #ffffff;
+	box-shadow: 0 12px 26px 0 rgba(37, 155, 177, 0.08);
+	-webkit-box-shadow: 0 12px 26px 0 rgba(37, 155, 177, 0.08);
+	-moz-box-shadow: 0 12px 26px 0 rgba(37, 155, 177, 0.08);
+}
+
+.form-container .sign-in {
+	padding: 3em;
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 70px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	color: gray;
+	padding-bottom: 10px;
+	margin-top: 5px;
+}
+
+.form-container .sign-in input[type=text], .form-container .sign-in input[type=password] {
+	font-size: 1em;
+	border-radius: 3px;
+	border: 2px solid #daedf2;
+	padding: 5px;
+	width: 100%;
+	color: #4d929e;
+	box-sizing: border-box;
+	height: 40px;
+}
+
+.form-container .sign-in input {
+	margin-top: 15px;
+}
+.form-container .form-ation {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.form-container .form-action input[type=submit] {
+	background-color: #1ab2d5;
+	color: white;
+	border-radius: 3px;
+	border: none;
+	padding: 10px;
+	margin: 0px;
+	margin-top: 10px;
+	font-size: 1em;
+	margin-right: 10px;
+	-webkit-appearance: push-button;
+	user-select: none;
+	white-space: pre;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	font: 13.3333px Arial;
+}
+
+.available:hover {
+	cursor: pointer;
+}
+
+
+table {
+	display: none;
+}
+
+.hide{
+	display: none;
+}
+#bg {
+	margin-top: 50px;
+	-webkit-box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.2);
+}
+
+.btn-stay, .btn-stay2 {
+	position:fixed;
+	width:120px;
+	opacity: 0;
+
+}
+.btn-stay{
+	left:190px;
+	top: 345px;
+}
+.btn-stay2{
+	left:330px;
+	top: 456px;
+}
+
+.btn-stay:hover, .btn-stay2:hover{
+	cursor:pointer;
+}
+
+.cal-contents {
+	margin-top: 50px;
+	display: block;
+	width: 100%;
+	padding-left:30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	height: auto;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.2);
+}
+.cal-contents .h4-head {
+	color: #ccc;
+	border-bottom: 0.5px solid #ccc;
+	margin-left: 0 auto;
+}
+.schedule-head{
+	background-color: white;
+	border-bottom: 0.5px solid #ccc;
+	text-align: left;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.cal-contents .row .cal{
+	padding: 8px;
+	width: 140px;
+}
+.sclick, .cal-time {
+	background-color: #ececec;
+	border: 0.5px solid #ccc;
+	height:40px;
+}
+.sclick {
+	cursor: pointer;
+}
+.cal-time {
+	text-align: center;
+	color:#a1a7ad;
+}
+
+.row{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+}
+
+.login-form-error{
+	font-weight: bold;
+	display: none;
+    color: rgb(183, 43, 43);
+    border-radius: 5px;
+    background-color: #f38484;
+    padding: 10px;
+}
+
+.cal-heighlight{
+	background-color: #f38484;
+}

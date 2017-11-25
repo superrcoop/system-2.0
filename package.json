@@ -1,0 +1,16 @@
+{
+  "name": "electron-project",
+  "version": "1.0.0",
+  "description": "Test Project",
+  "main": "static/js/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Milton Edwards",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.7.9",
+    "hammerjs": "^2.0.8",
+    "materialize-css": "^0.100.2"
+  }
+}
