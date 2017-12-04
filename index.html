@@ -9,12 +9,13 @@
 	<link rel="stylesheet" href = "static/css/materialize.min.css">
 	<link rel="stylesheet" href = "static/css/materialicons.css">
 	<link rel="stylesheet" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--	<link rel="stylesheet" href = "static/css/reset.css">-->
 	<link rel="stylesheet" href = "static/css/style.css">
-<!--	<link rel="stylesheet" href = "static/css/schedule.css">-->
 	<link rel="import" href="static/sections/login.html">
-<!--	<link rel="import" href="static/sections/home.html">-->
 	<link rel="import" href="static/sections/schedule.html">
+	<link rel="import" href="static/sections/admin.html">
+	<link rel="import" href="static/sections/grades.html">
+	<link rel="import" href="static/sections/modal.html">
+	<link rel="import" href="static/sections/maintenance.html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<style>
 
@@ -23,15 +24,18 @@
 </head>
 
 <body>
+
 	<header>
 		<div id="mySidenav" class="sidenav list-group">
-			<a href="javascript:void(0)" class="closebtn">&times;</a>
-			<a href="#" class="login list-group-item"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a>
-			<a href="#" class="list-group-item"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;Schedule</a>
-			<a href="#" class="list-group-item"><i class="fa fa-heart fa-fw" aria-hidden="true"></i>&nbsp;Maintenance</a>
-			<a href="#" class="login admin list-group-item"><i class="fa fa-print fa-fw" aria-hidden="true"></i>&nbsp;Report</a>
-			<a href="#" class="login admin list-group-item"><i class="fa fa-cogs fa-fw" aria-hidden="true"></i>&nbsp;Settings</a>
-			<a href="#" class="login list-group-item sign-out"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i>&nbsp;Logout</a>
+			<a href="javascript:void(0)" class="closebtn" id='close-btn'>&times;</a>
+			<a href="#" class="list-group-item" id='home-btn'><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a>
+			<a href="#" class="list-group-item" id='schedule-btn'><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;Schedule</a>
+			<a href="#" class="login list-group-item" id='grades-btn'><i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>&nbsp;Grades</a>
+			<a href="#" class="list-group-item" id='maintenance-btn'><i class="fa fa-heart fa-fw" aria-hidden="true"></i>&nbsp;Maintenance</a>
+			<!-- <a href="#" class="login admin list-group-item" id='report-btn'><i class="fa fa-print fa-fw" aria-hidden="true"></i>&nbsp;Report</a> -->
+			<a href="#" class="login admin list-group-item" id='admin-btn'><i class="fa fa-lock fa-fw" aria-hidden="true"></i>&nbsp;Admin</a>
+			<a href="#" class="login admin list-group-item" id='settings-btn'><i class="fa fa-cogs fa-fw" aria-hidden="true"></i>&nbsp;Settings</a>
+			<a href="#" class="login list-group-item sign-out" id='logout-btn'><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i>&nbsp;Logout</a>
 		</div>
 		
 		<span class="hamburger-menu">

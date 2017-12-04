@@ -59,7 +59,7 @@ a:focus {
 	border-bottom: none;
 }
 
-img {
+img, a {
 	-webkit-user-drag: none; 
 }
 
@@ -226,7 +226,8 @@ header {
 	-moz-box-shadow: 0 12px 26px 0 rgba(37, 155, 177, 0.08);
 }
 
-.form-container .sign-in {
+.form-container .sign-in, 
+.form-container .maintain {
 	padding: 3em;
 	width: 100%;
 	box-sizing: border-box;
@@ -243,7 +244,8 @@ label {
 	margin-top: 5px;
 }
 
-.form-container .sign-in input[type=text], .form-container .sign-in input[type=password] {
+.form-container .sign-in input[type=text], .form-container .sign-in input[type=password],
+.form-container .maintain input[type=text], .form-container .maintain input[type=password] {
 	font-size: 1em;
 	border-radius: 3px;
 	border: 2px solid #daedf2;
@@ -254,17 +256,19 @@ label {
 	height: 40px;
 }
 
-.form-container .sign-in input {
+.form-container .sign-in input,
+.form-container .maintain input {
 	margin-top: 15px;
 }
-.form-container .form-ation {
+.form-container .form-action,
+.form-container .form-maintain {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 	justify-content: space-between;
 }
 
-.form-container .form-action input[type=submit] {
+.form-container .form-action input[type=submit], {
 	background-color: #1ab2d5;
 	color: white;
 	border-radius: 3px;
@@ -339,17 +343,19 @@ table {
 	box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.2);
 }
 .cal-contents .h4-head {
-	color: #ccc;
-	border-bottom: 0.5px solid #ccc;
+	color: #cecfd3;
+	/*border-bottom: 0.5px solid #cecfd3;*/
 	margin-left: 0 auto;
+	/*width: 980px;*/
 }
 .schedule-head{
 	background-color: white;
-	border-bottom: 0.5px solid #ccc;
+	border-bottom: 0.5px solid #cecfd3;
 	text-align: left;
 	font-size: 1.5em;
 	font-weight: bold;
 	text-align: center;
+	width:980px;
 }
 
 .cal-contents .row .cal{
@@ -357,26 +363,26 @@ table {
 	width: 140px;
 }
 .sclick, .cal-time {
-	background-color: #ececec;
-	border: 0.5px solid #ccc;
+	background-color: #f9f9f9;
+	border: 0.5px solid #cecfd3;
 	height:40px;
 }
 .sclick {
 	cursor: pointer;
+	color: #a5a4a3;
 }
 .cal-time {
 	text-align: center;
-	color:#a1a7ad;
+	color: #a5a4a3;
 }
 
 .row{
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
-
 }
 
-.login-form-error{
+.login-form-error, .maintain-form-error{
 	font-weight: bold;
 	display: none;
     color: rgb(183, 43, 43);
@@ -387,4 +393,35 @@ table {
 
 .cal-heighlight{
 	background-color: #f38484;
+	color: #ffffff;
+}
+
+.action-btn{
+	margin-left: 50px;
+	width: 165px;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+.online{
+	color: #1daf20;
+}
+.offline{
+	color: #af1c1c;
+}
+
+.modal {
+	max-height: 90%;
+}
+
+.modal-content form{
+	margin-bottom: 40px;
+}
+
+.modal-content h5{
+	text-align: center;
+}
+
+.ok-btn{
+	display: none;
 }
