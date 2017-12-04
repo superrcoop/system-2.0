@@ -15,16 +15,14 @@ The current system that is being used by the lab assistants is very limited and 
 
 **Getting Started !**
 This app requires the latest version of [NodeJS](https://nodejs.org/en/)
-`
 # Clone the repository
-$ git clone https://github.com/milly-code/system-2.0.git
+`$ git clone https://github.com/milly-code/system-2.0.git`
 # Go into the repository
-$ cd system-2.0
+`$ cd system-2.0`
 # Install dependencies
-$ npm install
+`$ npm install`
 # Run the app
-$ npm start
-`
+`$ npm start`
 
 Follow me on social media
 [Twitter](http://twitter.com/marshalloflight)
