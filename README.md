@@ -1,5 +1,5 @@
-`Department of Computing Lab System 2.0 beta` made with [ElectronJS](https://electronjs.org/) 1.7.9
-=========================================================================
+`Department of Computing Lab System 2.0 beta` 
+===============================================
 
 Description
 -----------
@@ -13,27 +13,28 @@ With the help of Electron, creating the desktop application became very easy as 
 
 The current system that is being used by the lab assistants is very limited and ugly. After I got the assignment, I thought it would be cool (as a lab assistant myself) to take it up on my self to do some research on how to make the tool more useful and more beautiful. After long hours of research and collection of data from the other lab assistants and lab managers, I thought about new functionalities and a brand new design for the system.
 
-**Getting Started !**
-This app requires the latest version of [NodeJS](https://nodejs.org/en/)
-# Clone the repository
+Getting Started !
+-------------------
+
+This app requires the latest version of [NodeJS](https://nodejs.org/en/) and [Electron](https://electronjs.org)
+
+Clone the repository
 `$ git clone https://github.com/milly-code/system-2.0.git`
-# Go into the repository
+
+Go into the repository
 `$ cd system-2.0`
-# Install dependencies
+
+Install dependencies
 `$ npm install`
-# Run the app
+
+Run the app
 `$ npm start`
 
-Follow me on social media
-[Twitter](http://twitter.com/marshalloflight)
-[Instagram](http://instagram.com/milly.gif)
 
 Licence
--------
+---------
 
 Copyright (c) 2017 Milton E.
-
-[tweet](http://twitter.com/marshalloflight)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -52,3 +53,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+
+Contributors
+---------------
+
+- [Milton E.](http://twitter.com/marshalloflight)
+- [Jordan C.](https://jordancooper.me/)

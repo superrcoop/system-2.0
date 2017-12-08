@@ -3,21 +3,60 @@
 		<!-- <img src="static/img/landing.jpg" id="bg">
 		<button class="btn-stay">Hello</button>
 		<button class="btn-stay2">Hello</button> -->
-		<div class="cal-contents">
-			<div class="row h4-head">
-				<h4>Grades Management</h4>
-			</div>
-			<div class="row schedule-head">
-				<div class="col s1 cal"></div>
-				<div class="col s1 cal">Monday</div>
-				<div class="col s1 cal">Tuesday</div>
-				<div class="col s1 cal">Wednesday</div>
-				<div class="col s1 cal">Thursday</div>
-				<div class="col s1 cal">Friday</div>
-				<div class="col s1 cal">Saturday</div>
-			</div>
-
-		</div>
-
+		<ul class="collapsible" data-collapsible="accordion">
+		  <li>
+		    <div class="collapsible-header">
+		      <h3>COMP0101</h3>
+		      <span class="new badge">3</span></div>
+		    	<div class="collapsible-body">
+				<ul class="collection">
+				    <li class="collection-item avatar">
+				      <img src="static/assets/person.jpg" alt="" class="circle">
+				      <span class="title">John Brown</span>
+				      <p>Id:62003483 <br>
+				         Major: Computer science
+				      </p>
+				      <a class="waves-effect waves-light btn modal-trigger secondary-content" href="#modal1"><i class="large material-icons">mode_edit</i></a>
+				      <!-- Modal Structure -->
+					  <div id="modal1" class="modal">
+					    <div class="modal-content">
+					    	<p>Assignment1: 10/10<br>Assignment2: 9/10</p>
+					    </div>
+					    <div class="modal-footer">
+					      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Back</a>
+					    </div>
+					  </div>
+				    </li>
+				</ul>
+		    </div>
+		  </li>
+		  <li>
+		    <div class="collapsible-header">
+		      <h3>INFO2108</h3>
+		      <span class="new badge">2</span></div>
+		    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+		  </li>
+		  <li>
+		    <div class="collapsible-header">
+		      <h3>INFO2318</h3>
+		      <span class="new badge">2</span></div>
+		    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+		  </li>
+		  <li>
+		    <div class="collapsible-header">
+		      <h3>COMP2108</h3>
+		    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+		  </li>
+		  <li>
+		    <div class="collapsible-header">
+		      <h3>COMP3228</h3>
+		    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+		  </li>
+		  <li>
+		    <div class="collapsible-header">
+		      <h3>COMP0102</h3>
+		    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+		  </li>
+		</ul>
 	</div>
 </template>

@@ -1,5 +1,0 @@
-https://reactjs.org/tutorial/tutorial.html
-https://facebook.github.io/react-native/
-https://developer.mozilla.org/en-US/docs/Online_and_offline_events
-https://www.npmjs.com/package/material-ui
-http://www.material-ui.com/#/
