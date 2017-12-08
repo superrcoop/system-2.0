@@ -425,3 +425,8 @@ table {
 .ok-btn{
 	display: none;
 }
+
+.card{
+	width: 300px;
+	height:400px;
+}
