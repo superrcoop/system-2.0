@@ -12,7 +12,11 @@ let window;
 app.on('ready', function(){
 	
 	//create new window
-	window = new BrowserWindow({});
+	window = new BrowserWindow({width: 800, height: 600})
+		window.on('closed', () => {
+  		window = null
+		})
+	
 	
 	//load html into window
 	window.loadURL(url.format({

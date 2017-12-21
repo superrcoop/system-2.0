@@ -4,9 +4,7 @@
 Description
 -----------
 
-`Department of Computing Lab System 2.0 beta` is a system that was built to as part of a school project given by the User Interface Lecturer at the University of the West Indies. The project is currently in developer mode and is projected to be completed by the end of this month with the hopes of being deployed to be used by the Coomputer Science Lab at the University of the West Indies.
-
-With the help of Electron, creating the desktop application became very easy as it allowed the use of pure 'JavaScript HTML & CSS' to design and develop.
+`Department of Computing Lab System 2.0 beta` is a system that was built to as part of a school project given by the User Interface Design Lecturer at the University of the West Indies. The project is currently in developer mode and has hopes of being deployed to be used by the Coomputer Science Lab at the University of the West Indies. With the help of Electron, creating the desktop application became very easy as it allowed the use of pure 'JavaScript HTML & CSS' to design and develop.
 
 
 **Why ?**
@@ -19,15 +17,19 @@ Getting Started !
 This app requires the latest version of [NodeJS](https://nodejs.org/en/) and [Electron](https://electronjs.org)
 
 Clone the repository
+
 `$ git clone https://github.com/milly-code/system-2.0.git`
 
 Go into the repository
+
 `$ cd system-2.0`
 
 Install dependencies
+
 `$ npm install`
 
 Run the app
+
 `$ npm start`
 
 
